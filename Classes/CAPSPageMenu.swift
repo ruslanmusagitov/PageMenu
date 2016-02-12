@@ -745,9 +745,9 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                 if self.menuItems.count > 0 {
                     if self.menuItems[self.lastPageIndex].titleLabel != nil && self.menuItems[self.currentPageIndex].titleLabel != nil {
                         self.menuItems[self.lastPageIndex].titleLabel!.textColor = self.unselectedMenuItemLabelColor
-                        self.menuItems[self.lastPageIndex].titleLabel!.textColor = self.unselectedSegmentBackgroundColor
+                        self.menuItems[self.lastPageIndex].titleLabel!.backgroundColor = self.unselectedSegmentBackgroundColor
                         self.menuItems[self.currentPageIndex].titleLabel!.textColor = self.selectedMenuItemLabelColor
-                        self.menuItems[self.currentPageIndex].titleLabel!.textColor = self.selectedSegmentBackgroundColor
+                        self.menuItems[self.currentPageIndex].titleLabel!.backgroundColor = self.selectedSegmentBackgroundColor
                     }
                 }
             })
