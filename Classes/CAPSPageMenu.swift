@@ -420,7 +420,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
             
             menuItemView.titleLabel!.textAlignment = NSTextAlignment.Center
             menuItemView.titleLabel!.textColor = unselectedMenuItemLabelColor
-            menuItemView.titleLabel!.backgroundColor = unselectedSegmentBackgroundColor
+            menuItemView.backgroundColor = unselectedSegmentBackgroundColor
             
             //**************************拡張*************************************
             menuItemView.titleLabel!.adjustsFontSizeToFitWidth = titleTextSizeBasedOnMenuItemWidth
@@ -745,9 +745,9 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
                 if self.menuItems.count > 0 {
                     if self.menuItems[self.lastPageIndex].titleLabel != nil && self.menuItems[self.currentPageIndex].titleLabel != nil {
                         self.menuItems[self.lastPageIndex].titleLabel!.textColor = self.unselectedMenuItemLabelColor
-                        self.menuItems[self.lastPageIndex].titleLabel!.backgroundColor = self.unselectedSegmentBackgroundColor
+                        self.menuItems[self.lastPageIndex].backgroundColor = self.unselectedSegmentBackgroundColor
                         self.menuItems[self.currentPageIndex].titleLabel!.textColor = self.selectedMenuItemLabelColor
-                        self.menuItems[self.currentPageIndex].titleLabel!.backgroundColor = self.selectedSegmentBackgroundColor
+                        self.menuItems[self.currentPageIndex].backgroundColor = self.selectedSegmentBackgroundColor
                     }
                 }
             })
