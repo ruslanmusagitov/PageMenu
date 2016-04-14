@@ -251,6 +251,22 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
         super.init(coder: aDecoder)
     }
 	
+    public override func viewDidAppear(animated : Bool) {
+        super.viewDidAppear(animated)
+        if childViewControllers.count > currentPageIndex {
+            let vc = childViewControllers[currentPageIndex]
+            vc.viewDidAppear(animated)
+        }
+    }
+    
+    public override func viewWillAppear(animated : Bool) {
+        super.viewWillAppear(animated)
+        if childViewControllers.count > currentPageIndex {
+            let vc = childViewControllers[currentPageIndex]
+            vc.viewWillAppear(animated)
+        }
+    }
+    
 	// MARK: - Container View Controller
 	public override func shouldAutomaticallyForwardAppearanceMethods() -> Bool {
 		return true
