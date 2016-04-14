@@ -107,7 +107,7 @@ public class CAPSPageMenu: UIViewController, UIScrollViewDelegate, UIGestureReco
     
     var selectionIndicatorView : UIView = UIView()
     
-    var currentPageIndex : Int = 0
+    public var currentPageIndex : Int = 0
     var lastPageIndex : Int = 0
     
     public var selectionIndicatorColor : UIColor = UIColor.whiteColor()
